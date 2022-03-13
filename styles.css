@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.navbar {
+  height: 75px;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 20px;
+}
+
+#banner {
+  background-image: url(img/bg/bg-main-cover.jpg);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.jumbotron {
+  padding-top: 250px;
+}
+
+.title {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.transition1 {
+  padding-top: 50px;
+  z-index: 2;
+  height: 200px;
+  background-image: linear-gradient(#cc000000, #273036);
+}
+
+#rarity {
+  height: 2000px;
+  background-color: #273036;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+
+.common,
+.rare,
+.limited {
+  padding: 2rem;
+}
+
+.compic {
+  padding: 10px;
+}
+
+.com-col {
+  padding-top: 10px;
+}
+
+#commonmore {
+  display: none;
+}
+#raremore {
+  display: none;
+}
+#limitedmore {
+  display: none;
+}
+
+.seemore {
+  width: 300px;
+}
