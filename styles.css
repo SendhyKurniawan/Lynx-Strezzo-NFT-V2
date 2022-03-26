@@ -8,10 +8,6 @@ a {
   text-decoration: none;
 }
 
-.logo {
-  margin-right: 10px;
-}
-
 .navbar {
   height: 75px;
   margin-top: 2rem;
@@ -154,6 +150,12 @@ a {
 
   .compic {
     width: 200px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .logo {
+    margin-right: 10px;
   }
 }
 
