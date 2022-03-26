@@ -123,6 +123,10 @@ a {
   .phase {
     width: 500px;
   }
+
+  .compic {
+    width: 300px;
+  }
 }
 @media only screen and (max-width: 1280px) {
   .phase {
