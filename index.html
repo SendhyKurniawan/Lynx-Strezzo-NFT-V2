@@ -200,12 +200,41 @@
 
       myBtn1.addEventListener('click', function() {
         Swal.fire({
-          title: "Are you sure you want to leave this page?",
+          title: 'Are you sure want to leave this page?',
+          showCancelButton: true,
           showConfirmButton: true,
-          showCancelButton: true
-        }) .then(function() {
-      window.location = "index.html";
-      });
+          cancelButtonColor: '#d33'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location = "index.html";
+          }
+        })
+    });
+
+      myBtn2.addEventListener('click', function() {
+        Swal.fire({
+          title: 'Are you sure want to leave this page?',
+          showCancelButton: true,
+          showConfirmButton: true,
+          cancelButtonColor: '#d33'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location = "index.html";
+          }
+        })
+    });
+
+      myBtn3.addEventListener('click', function() {
+        Swal.fire({
+          title: 'Are you sure want to leave this page?',
+          showCancelButton: true,
+          showConfirmButton: true,
+          cancelButtonColor: '#d33'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location = "index.html";
+          }
+        })
     });
     </script>
   </body>
