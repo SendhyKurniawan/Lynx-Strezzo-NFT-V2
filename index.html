@@ -27,7 +27,7 @@
         <div class="collapse navbar-collapse bg-dark" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item ms-3">
-              <a class="nav-link" href="#transition1">Rarity</a>
+              <a class="nav-link" href="#rarity">Rarity</a>
             </li>
             <li class="nav-item ms-3">
               <a class="nav-link" href="#about">About</a>
@@ -49,16 +49,16 @@
       <div class="jumbotron">
         <h1 class="title text-white text-center">LYNX STREZZO NFT</h1>
         <div class="d-grid gap-2 d-md-block text-center">
-          <button class="buttonbannersoc btn btn-danger btn-lg" type="button">Social Media</button>
-          <button class="buttonbanneros btn btn-outline-danger btn-lg" type="button">Official Collection</button>
+          <a href="#social"><button class="btn btn-danger btn-lg" type="button">Social Media</button></a>
+          <a href="https://opensea.io/collection/lynxstrezzo"><button class="buttonbanneros btn btn-outline-danger btn-lg" type="button">Official Collection</button></a>
         </div>
       </div>
-      <div class="transition1" id="transition1"></div>
+      <div class="transition1" id="rarity"></div>
     </section>
     <!-- Close Banner -->
 
     <!-- Rarity -->
-    <section id="rarity" class="pt-5 container-fluid">
+    <section id="secrarity" class="pt-5 container-fluid">
       <div class="common pt-3" >
         <h2 class="text-white raritittle">Common</h2>
         <div class="row justify-content-center pt-3 text-center">
@@ -164,8 +164,10 @@
     </section>
     <!-- Close Rarity -->
 
+    <div class="transition" id="about"></div>
+
     <!-- About -->
-    <section id="about" class="pt-5 container">
+    <section id="secabout" class="pt-5 container">
       <h2 class="abouttitle text-white text-center">ABOUT LYNX STREZZO</h2>
       <div class="row justify-content-center">
         <div class="col-md-6">
@@ -175,30 +177,26 @@
     </section>
     <!-- Close About -->
 
+    <div class="transition" id="social"></div>
+
     <!-- Social Media -->
-    <section id="social" class="pt-5 container">
+    <section id="secsocial" class="pt-5 container">
       <div class="socialtittle">
         <h2 class="text-white text-center">OUR SOCIAL MEDIA</h2>
       </div>
       <div class="buttonbox">
-        <div class="row justify-content-center pt-3 socbutton">
-          <button type="button" class="btn discord btn-outline-danger btn-lg">JOIN OUR DISCORD</button>
-        </div>
-        <div class="row justify-content-center pt-3 socbutton">
-          <button type="button" class="btn instagram btn-outline-danger btn-lg">INSTAGRAM</button>
-        </div>
-        <div class="row justify-content-center pt-3 socbutton">
-          <button type="button" class="btn twitter btn-outline-danger btn-lg">TWITTER</button>
-        </div>
-        <div class="row justify-content-center pt-3 socbutton">
-          <button type="button" class="btn opensea btn-outline-danger btn-lg">OPENSEA</button>
-        </div>
+          <a href="https://discord.gg/hBC3zkkd"><button type="button" class="btn discord btn-outline-danger btn-lg">JOIN OUR DISCORD</button></a><br>
+          <a href="https://www.instagram.com/lynx.strezzo.nft/"><button type="button" class="btn instagram btn-outline-danger btn-lg">INSTAGRAM</button></a><br>
+          <a href="https://twitter.com/LynxStrezzo"><button type="button" class="btn twitter btn-outline-danger btn-lg">TWITTER</button></a><br>
+          <a href="https://opensea.io/collection/lynxstrezzo"><button type="button" class="btn opensea btn-outline-danger btn-lg">OPENSEA</button></a><br>
       </div>
     </sectioni>
     <!-- Close SocialMedia -->
 
+    <div class="transition" id="roadmap"></div>
+
     <!-- Roadmap -->
-    <section id="roadmap" class="pt-5 container">
+    <section id="secroadmap" class="pt-5 container">
       <h2 class="roadmaptittle text-white text-center">OUR ROADMAP</h2>
       <!-- Phase 1 -->
       <div class="phase text-white text-center border border-danger border-3 rounded">
@@ -243,6 +241,7 @@
       const myBtn1 = document.querySelector('#myBtn1');
       const myBtn2 = document.querySelector('#myBtn2');
       const myBtn3 = document.querySelector('#myBtn3');
+      const myBtn4 = document.querySelector('#myBtn4');
 
       myBtn1.addEventListener('click', function() {
         Swal.fire({
@@ -252,7 +251,7 @@
           cancelButtonColor: '#d33'
         }).then((result) => {
           if (result.isConfirmed) {
-            window.location = "index.html";
+            window.location = "rarity.html#common";
           }
         })
     });
@@ -265,7 +264,7 @@
           cancelButtonColor: '#d33'
         }).then((result) => {
           if (result.isConfirmed) {
-            window.location = "index.html";
+            window.location = "rarity.html#rare";
           }
         })
     });
@@ -278,10 +277,25 @@
           cancelButtonColor: '#d33'
         }).then((result) => {
           if (result.isConfirmed) {
-            window.location = "index.html";
+            window.location = "rarity.html#limited";
           }
         })
     });
+
+      myBtn4.addEventListener('click', function() {
+        Swal.fire({
+          title: 'Are you sure want to leave this page?',
+          showCancelButton: true,
+          showConfirmButton: true,
+          cancelButtonColor: '#d33'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location = "rarity.html#legendary";
+          }
+        })
+    });
+
+      
     </script>
   </body>
 </html>
