@@ -55,9 +55,23 @@ a {
   font-weight: 400;
 }
 
+.comingsoon {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 200px;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 600px) {
+  .comingsoon {
+    font-size: 75px;
+    font-weight: 100;
+  }
+}
+
 .common,
 .rare,
-.limited {
+.limited,
+.legendary {
   padding: 2rem;
   margin: auto;
 }
@@ -142,11 +156,6 @@ a {
   .compic {
     width: 200px;
     border-radius: 30px;
-  }
-
-  .legendary {
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 
   .raritittle {
