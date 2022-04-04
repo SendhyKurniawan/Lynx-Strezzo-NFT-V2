@@ -116,6 +116,15 @@ a {
   margin: auto;
 }
 
+.bannerrow {
+  margin: auto;
+}
+
+.buttonbanner {
+  margin: auto;
+  width: 300px;
+}
+
 .buttonbox {
   margin: auto;
   width: 300px;
@@ -160,6 +169,16 @@ a {
 
   .raritittle {
     padding-left: 2rem;
+  }
+
+  .buttonbannersoc {
+    margin: auto;
+    width: 300px;
+  }
+
+  .buttonbanneros {
+    margin: auto;
+    width: 300px;
   }
 }
 @media only screen and (max-width: 1280px) {
