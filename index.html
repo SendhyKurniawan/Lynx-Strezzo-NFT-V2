@@ -21,7 +21,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar fixed-top navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <nav class="navbar navbar fixed-top navbar-expand-lg navbar-dark bg-dark shadow-sm" data-aos="fade-down" data-aos-offset="200" data-aos-duration="1500" data-aos-once="true">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="img/icon/logo.png" alt="logo" width="50px" class="logo" />Lynx Strezzo</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,19 +47,19 @@
     <!-- Banner -->
     <section id="banner">
       <div class="jumbotron">
-        <h1 class="title text-white text-center">LYNX STREZZO NFT</h1>
+        <h1 class="title text-white text-center" data-aos="fade-down" data-aos-offset="200" data-aos-duration="1500" data-aos-once="true">LYNX STREZZO NFT</h1>
 
     <!-- About -->
     <section id="secabout" class="pt-5 container">
-      <h2 class="abouttitle text-white text-center">ABOUT LYNX STREZZO</h2>
+      <h2 class="abouttitle text-white text-center" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1500" data-aos-once="true">ABOUT LYNX STREZZO</h2>
       <div class="row justify-content-center">
         <div class="col-md-6">
-          <p class="aboutphar text-white text-center">Welcome to the gloomy world of Lynx Strezzo, a deppresed Lynx Cat, who's a little tired of his life, but chilling and vibing on Polygon's Blockchain.</p>
+          <p class="aboutphar text-white text-center" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1500" data-aos-once="true">Welcome to the gloomy world of Lynx Strezzo, a deppresed Lynx Cat, who's a little tired of his life, but chilling and vibing on Polygon's Blockchain.</p>
         </div>
       </div>
     </section>
     <!-- Close About --> 
-          <div class="row d-grid gap-2 d-md-block text-center pt-5 container bannerrow">
+          <div class="row d-grid gap-2 d-md-block text-center pt-5 container bannerrow" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1500" data-aos-once="true">
             <a href="#social"><button class="btn btn-danger btn-lg buttonbannersoc" type="button">Social Media</button></a>
           <a href="https://opensea.io/collection/lynxstrezzo"><button class="buttonbanneros btn btn-outline-danger btn-lg" type="button">Official Collection</button></a>
       </div>
@@ -220,47 +220,7 @@
     <!-- SweetAlert2 JS -->
     <script src="js/sweetalert2.all.min.js"></script>
 
-    <!-- GSAP JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
-    <script>
-      gsap.from(".navbar", {
-        y: -300,
-        duration: 1,
-        ease: "bounce.out"
-      })
-
-      gsap.from(".title",{
-        y: -200,
-        opacity: 0,
-        duration: 1,
-        ease: "back.out(1.7)"
-      })
-
-      gsap.from(".aboutphar", {
-        x: -100,
-        opacity: 0,
-        duration: 1
-      })
-
-      gsap.from(".abouttitle", {
-        y: 100,
-        opacity: 0,
-        duration: 1,
-      })
-
-      gsap.from(".buttonbannersoc", {
-        x: -100,
-        opacity: 0,
-        duration: 1
-      })
-
-      gsap.from(".buttonbanneros", {
-        x: 100,
-        opacity: 0,
-        duration: 1
-      })
-    </script>
-
+  
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
