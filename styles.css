@@ -17,9 +17,7 @@ a {
 }
 
 #banner {
-  background-image: url(img/bg/bg-main-cover.jpg)
   width: 100%;
-  opacity: 0%;
   background-size: cover;
   background-repeat: no-repeat;
 }
